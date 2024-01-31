@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+   <children>
+      <Label layoutX="201.0" layoutY="27.0" prefHeight="54.0" prefWidth="173.0" text="HELLOW USER........">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserName" layoutX="156.0" layoutY="216.0" prefHeight="25.0" prefWidth="364.0" promptText="Enter your name" />
+      <Label layoutX="58.0" layoutY="216.0" prefHeight="25.0" prefWidth="82.0" text="    User name :" />
+      <JFXButton layoutX="224.0" layoutY="287.0" onAction="#btnLoginOnAction" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: pink;" text="Login...">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
