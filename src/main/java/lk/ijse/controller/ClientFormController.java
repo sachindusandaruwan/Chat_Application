@@ -11,6 +11,7 @@ import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -29,6 +30,9 @@ public class ClientFormController implements Runnable, Initializable {
     private DataOutputStream dataOutputStream;
     private Socket socket;
     private String clientName = "Client";
+
+    @FXML
+    private AnchorPane emojiPane;
 
 
     @FXML
@@ -182,4 +186,7 @@ public class ClientFormController implements Runnable, Initializable {
         }).start();
 
     }
+
+
+
 }
