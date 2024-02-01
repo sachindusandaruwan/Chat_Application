@@ -8,11 +8,10 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ClientFormController">
+<AnchorPane fx:id="apane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ClientFormController">
    <children>
       <Label layoutX="52.0" layoutY="36.0" prefHeight="26.0" prefWidth="92.0" text="HELLOW  !!!">
          <font>
@@ -36,77 +35,11 @@
          </image>
       </ImageView>
       <Button layoutX="447.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnImageOnAction" opacity="0.0" prefHeight="25.0" prefWidth="31.0" />
-      <ScrollPane fx:id="b" layoutX="18.0" layoutY="81.0" prefHeight="219.0" prefWidth="439.0">
+      <ScrollPane fx:id="b" layoutX="18.0" layoutY="81.0" prefHeight="219.0" prefWidth="567.0">
          <content>
-            <VBox fx:id="txtVBox" prefHeight="215.0" prefWidth="454.0" />
+            <VBox fx:id="txtVBox" prefHeight="215.0" prefWidth="548.0" />
          </content>
       </ScrollPane>
       <Button layoutX="373.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" text="emoji" />
-      <AnchorPane fx:id="emojiPane" layoutX="478.0" layoutY="67.0" prefHeight="219.0" prefWidth="107.0">
-         <children>
-            <HBox prefHeight="38.0" prefWidth="115.0">
-               <children>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <ImageView onMouseClicked="#btn1">
-                           <image>
-                              <Image url="@../assest/icon/icons8-dog-50.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn3">
-                           <image>
-                              <Image url="@../assest/icon/icons8-apple-50.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn5">
-                           <image>
-                              <Image url="@../assest/icon/icons8-flag-50.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn7">
-                           <image>
-                              <Image url="@../assest/icon/icons8-glass-50.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn9">
-                           <image>
-                              <Image url="@../assest/icon/icons8-grinning-face-48.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-                  <VBox prefHeight="200.0" prefWidth="100.0">
-                     <children>
-                        <ImageView onMouseClicked="#btn2">
-                           <image>
-                              <Image url="@../assest/icon/icons8-sad-50.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn4">
-                           <image>
-                              <Image url="@../assest/icon/icons8-man-50.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn6">
-                           <image>
-                              <Image url="@../assest/icon/icons8-hand-50.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn8">
-                           <image>
-                              <Image url="@../assest/icon/icons8-tea-cup-48.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView onMouseClicked="#btn10">
-                           <image>
-                              <Image url="@../assest/icon/icons8-sail-boat-50.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </VBox>
-               </children>
-            </HBox>
-         </children>
-      </AnchorPane>
    </children>
 </AnchorPane>

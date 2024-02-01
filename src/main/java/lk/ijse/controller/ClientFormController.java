@@ -16,6 +16,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
+import lk.ijse.emoji.Emoji;
 
 import java.awt.*;
 import java.io.*;
@@ -30,6 +31,8 @@ public class ClientFormController implements Runnable, Initializable {
     private DataOutputStream dataOutputStream;
     private Socket socket;
     private String clientName = "Client";
+    @FXML
+    private AnchorPane apane;
 
     @FXML
     private AnchorPane emojiPane;
@@ -174,9 +177,27 @@ public class ClientFormController implements Runnable, Initializable {
 
     }
     @FXML
-    void btnEmojiOnAction(ActionEvent event) {
+    void btnEmojiOnAction(ActionEvent actionEventevent) {
+        Emoji emoji = new Emoji();
+        VBox vBox =new VBox(emoji);
+        vBox.setPrefSize(300,400);
+        vBox.setLayoutX(200);
+        vBox.setLayoutY(75);
+        vBox.setStyle("-fx-font-size: 25");
 
+        apane.getChildren().add(vBox);
+        emoji.setVisible(true);
+
+        emoji.getListView().setOnMouseClicked(event -> {
+            String selectedEmoji = emoji.getListView().getSelectionModel().getSelectedItem();
+            if (selectedEmoji != null) {
+                txtMassegeTypingBar.setText(txtMassegeTypingBar.getText()+selectedEmoji);
+            }
+            emoji.setVisible(false);
+        });
     }
+
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
