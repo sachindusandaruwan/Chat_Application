@@ -13,33 +13,38 @@
 
 <AnchorPane fx:id="apane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ClientFormController">
    <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../assest/image/background.jpg" />
+         </image>
+      </ImageView>
       <Label layoutX="52.0" layoutY="36.0" prefHeight="26.0" prefWidth="92.0" text="HELLOW  !!!">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <TextField fx:id="txtMassegeTypingBar" layoutX="28.0" layoutY="332.0" prefHeight="25.0" prefWidth="453.0" promptText="tpye your massege" />
+      <TextField fx:id="txtMassegeTypingBar" layoutX="28.0" layoutY="332.0" opacity="0.85" prefHeight="25.0" prefWidth="453.0" promptText="tpye your massege" />
       <JFXButton layoutX="489.0" layoutY="329.0" onAction="#btnSendOnAction" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: yellow;" text="Send">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </JFXButton>
-      <Label fx:id="lblClientName" layoutX="147.0" layoutY="38.0" prefHeight="17.0" prefWidth="92.0">
+      <Label fx:id="lblClientName" layoutX="138.0" layoutY="38.0" prefHeight="17.0" prefWidth="92.0">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="447.0" layoutY="334.0">
+      <ImageView fitHeight="25.0" fitWidth="31.0" layoutX="447.0" layoutY="332.0">
          <image>
             <Image url="@../assest/icon/icons8-picture-50.png" />
          </image>
       </ImageView>
-      <Button layoutX="447.0" layoutY="334.0" mnemonicParsing="false" onAction="#btnImageOnAction" opacity="0.0" prefHeight="25.0" prefWidth="31.0" />
-      <ScrollPane fx:id="b" layoutX="18.0" layoutY="81.0" prefHeight="219.0" prefWidth="567.0">
+      <Button layoutX="447.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnImageOnAction" opacity="0.0" prefHeight="25.0" prefWidth="31.0" />
+      <ScrollPane fx:id="b" layoutX="18.0" layoutY="81.0" opacity="0.93" prefHeight="219.0" prefWidth="567.0">
          <content>
             <VBox fx:id="txtVBox" prefHeight="215.0" prefWidth="548.0" />
          </content>
       </ScrollPane>
-      <Button layoutX="373.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" text="emoji" />
+      <Button layoutX="390.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" prefHeight="17.0" prefWidth="47.0" text="emoji" />
    </children>
 </AnchorPane>

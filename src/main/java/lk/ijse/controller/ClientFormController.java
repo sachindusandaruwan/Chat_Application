@@ -180,7 +180,7 @@ public class ClientFormController implements Runnable, Initializable {
     void btnEmojiOnAction(ActionEvent actionEventevent) {
         Emoji emoji = new Emoji();
         VBox vBox =new VBox(emoji);
-        vBox.setPrefSize(300,400);
+        vBox.setPrefSize(300,200);
         vBox.setLayoutX(200);
         vBox.setLayoutY(75);
         vBox.setStyle("-fx-font-size: 25");
