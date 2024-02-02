@@ -45,6 +45,18 @@
             <VBox fx:id="txtVBox" prefHeight="215.0" prefWidth="548.0" />
          </content>
       </ScrollPane>
-      <Button layoutX="390.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" prefHeight="17.0" prefWidth="47.0" text="emoji" />
+      <Button layoutX="390.0" layoutY="332.0" mnemonicParsing="false" onAction="#btnEmojiOnAction" prefHeight="17.0" prefWidth="47.0" style="-fx-background-color: pink;" text="emoji" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="535.0" layoutY="1.0">
+         <image>
+            <Image url="@../assest/icon/icons8-minus-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="574.0" layoutY="1.0">
+         <image>
+            <Image url="@../assest/icon/icons8-close-24.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="574.0" layoutY="1.0" mnemonicParsing="false" onAction="#btnCloseOnAction" opacity="0.0" prefHeight="25.0" prefWidth="25.0" />
+      <JFXButton focusTraversable="false" layoutX="535.0" layoutY="1.0" onAction="#btnMinimizeOnAction" prefHeight="25.0" prefWidth="25.0" text=" " />
    </children>
 </AnchorPane>

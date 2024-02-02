@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXScrollPane;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -16,9 +17,11 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import lk.ijse.emoji.Emoji;
 
 import java.awt.*;
+import java.awt.event.MouseEvent;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -205,6 +208,18 @@ public class ClientFormController implements Runnable, Initializable {
         new Thread(()->{
             this.run();
         }).start();
+
+    }
+    @FXML
+    void btnCloseOnAction(ActionEvent event) {
+        System.exit(0);
+    }
+
+    @FXML
+    void btnMinimizeOnAction(ActionEvent event) {
+        Stage stage = ( Stage) ((JFXButton)event.getSource ()).getScene ().getWindow ();
+        stage.setIconified ( true );
+
 
     }
 

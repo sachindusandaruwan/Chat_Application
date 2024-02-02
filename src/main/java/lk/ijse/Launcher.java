@@ -5,6 +5,7 @@ import javafx.collections.FXCollections;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class Launcher extends Application {
     @Override
@@ -13,6 +14,7 @@ public class Launcher extends Application {
         Scene scene=new Scene(fxmlLoader.load());
         stage.setTitle("Login Chatapp");
         stage.setScene(scene);
+        stage.initStyle(StageStyle.UNDECORATED);
         stage.show();
     }
     public static void main(String[] args){
